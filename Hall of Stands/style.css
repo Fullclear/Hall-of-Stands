@@ -1,0 +1,523 @@
+/* For desktop */
+.background { /* Background for the body */
+    background-image: url(jojo_background.jpg);
+    background-repeat: repeat;
+}
+* {
+    box-sizing: border-box;
+}
+.title { /* For the title in the webpage */
+    border: 2px solid whitesmoke;
+    border-bottom: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-shadow: 5px 5px 5px black;
+    font-weight: 90;
+    font-size: 65px;
+    color: blueviolet;
+    margin: 0;
+    padding: 15px;
+    width: 1020px;
+    height: 90px;
+    background-color: rgb(71, 0, 71);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h5 { /* For the category title in the card container */
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    border-color: 2px solid whitesmoke;
+    margin: 0;
+    padding: 6px;
+    opacity: 100%;
+    width: 990px;
+    height: 40px;
+    background-color: blueviolet;
+}
+.about {
+    background-color: rgb(71, 0, 71);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: violet;
+    width: 980px;
+    height: 1000px;
+    border: 2px solid white;
+    margin-top: 7px;
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 3px 3px 3px black;
+    max-height: 80px;
+    overflow: hidden;
+    transition: max-height 0.75s ease-out;
+}
+.about.open {
+    max-height: 355px;
+    transition: max-height 0.75s ease-out;
+}
+.title-about {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 90;
+    font-size: 55px;
+    color: blueviolet;
+    margin: 0;
+    padding: 0px;
+}
+.intro { /* For the intro below the title */
+    border: 2px solid whitesmoke;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 7px;
+    margin-top: 0;
+    padding: 20px;
+    width: 1020px;
+    height: 100px;
+    color: violet;
+    background-color: rgb(71, 0, 71);
+    text-shadow: 3px 3px 3px black;
+}
+.navbar { /* For the navbar between the title + intro and the card container */
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0;
+    padding: 10px;
+    width: 1020px;
+    height: 50px;
+    background-color: purple;
+}
+.navbar a { /* For the font in the navbar */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px; 
+}
+
+ul li { /* For the filtering system inside the card container */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-style: italic;
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+    color: white;
+    background-color: rgb(222, 0, 222);
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 3px solid white;
+}
+ul { /* For the placement of the filtering system */
+    padding-top: 18px;
+    justify-content: left;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+ul li.active { /* For displaying the chosen filter once clicked */
+    background-color: plum;
+}
+a { /* For the design in the navbar */
+    font-size: 15px;
+    color: blueviolet;
+    text-decoration: none;
+    margin: 10px;
+    text-shadow: 3px 3px 3px black;
+    padding-top: 10px;
+}
+a:hover { /* For hovering the navbar */
+    color: violet;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bigbox { /* For the card container */
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    background-color: purple;
+    width: fit-content;
+    height: 4720px;
+    margin: 0;
+    padding: 15px;
+    margin-top: 7px;
+}
+.resp { /* For the placement positioning on the cards */
+    justify-content: center;
+    margin: 35px;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.desc{ /* For the description of the card */
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    transition: height 1.2s;
+    overflow: hidden;
+    position: absolute;
+}
+.desc h4 { /* For the card name */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 22px;
+    margin-top:70%;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    color: white;
+}
+.desc p { /* For a small description of a card */
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.desc a { /* For a design to another webpage with full description */
+    background: white;
+    font-size: 12px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    text-shadow: none;
+}
+.imgbox { /* For the card/s inside the container */
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    width: 265px;
+    height: 340px;
+    opacity: 100%;
+    box-shadow: 5px 5px 6px black;
+    transition: 1.5s;
+}
+.imgbox:hover { /* For the animation of displaying the card */
+    border: 1px solid yellow;
+    transform: scale(1.4);
+}
+.imgbox:hover .desc { /* For the animation of displaying the card name w/ description */
+    height: 100%
+}
+.imgbox img { /* For the image contained inside the card */
+    width: 263px;
+    height: 338px;
+}
+.footer { /* For the design of the footer */
+    width: 980px;
+    height: 160px;
+    background-color: purple;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+.footer p { /* For the design of the paragraph inside the footer */
+    margin: 0;
+    margin-left: -200px;
+    margin-right: 300px;
+    padding-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contacts { /* For the placement of 'Contacts' section */
+    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+.contacts h6 { /* For the design of the header inside 'Contacts' section */
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contacts i { /* For the design of the logos inside 'Contacts' section */
+    color: blueviolet;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 5px;
+    font-size: 35px;
+    margin-left: 10px;
+}
+.contacts i p{ /* For the design of the paragraph inside the 'Contacts' section */
+    color: white;
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 50px;
+}
+.socials { /* For the placement of the 'Socials' section */
+    width: 300px;
+    float: right;
+    margin-top: -115px;
+    padding: 10px;
+    text-align: right;
+}
+.socials h6 { /* For the design of the header inside the 'Socials' section */
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.socials i { /* For the design of the logos inside the 'Contacts' section */
+    padding: 5px;
+    font-size: 45px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-left: -35px;
+}
+[class*="resp"] { /* For displaying on mobile phones */
+    width: 25%;
+}
+@media only screen and (max-width: 1440px) { /* For large laptops (1440px) (cannot exceed the width up to over 1440px) */
+    .bigbox, .navbar, .resp, .title, .intro, .imgbox, .about, .footer {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) { /* For landscape tablets and normal laptops (768px and up) */
+    .bigbox {
+        height: 10000px;
+    }
+}
+@media only screen and (min-width: 768px) { /* For landscape tablets (768px and up) */
+    .bigbox, .navbar, .resp, .title, .intro, .about {
+        width: 1013px;
+    }
+    .category {
+        width: 100%;
+    }
+    .resp {
+        justify-content: center;
+        margin: 10px;
+        padding: 0 6px;
+        float: left;
+        width: 30.99999%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    ul {
+        float: left;
+        margin-left: -20px;
+    }
+}
+@media only screen and (min-width: 600px) { /* For portrait tablets & large phones (600px and up) */
+    .about {
+        width: 1013px;
+    }
+    .navbar a {
+        font-size: 150%;
+        margin: 5%;
+    }
+    ul li {
+        font-size: 150%;
+    }
+    h5 {
+        font-size: 165%;
+    }
+    .footer {
+        width: 1020px;
+    }
+    .contacts i p {
+        margin-top: -97px;
+    }
+    .socials {
+        padding: 5px;
+    }
+    .socials h6 {
+        margin-top: -1px;
+    }
+}
+@media only screen and (max-width: 600px) { /* For medium mobile phones (600px and down) */
+    .bigbox, .navbar, .resp, .title, .intro, .imgbox, .about, .footer {
+        width: 101%;
+        margin: 0;
+    }
+    .resp {
+        justify-content: center;
+        margin: 20px;
+        padding: 0px 11px;
+        float: left;
+        width: 24.99999%;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .bigbox {
+        margin-top: 7px;
+        height: 12770px;
+    }
+    .intro {
+        margin-bottom: 7px;
+    }
+    .imgbox {
+        margin: 10px;
+        padding: 0px;
+        width: 290px;
+        height: 330px;
+    }
+    .imgbox img {
+        height: 327px;
+        width: 287px;
+    }
+    .category {
+        width: 100%;
+    }
+    .navbar a {
+        font-size: 12px;
+    }
+    .footer {
+        margin-top: 7px;
+        height: 200px;
+    }
+    .title {
+        height: 50px;
+        font-size: 280%;
+        padding-top: 5px;
+    }
+    .about {
+        margin-top: 7px;
+        max-height: 65px;
+    }
+    .about.open {
+        max-height: 275px;
+    }
+    .about h3{
+        font-size: 260%;
+    }
+    h4 {
+        font-size: 50%;
+    }
+    h5 {
+        font-size: 115%;
+        padding-top: 8px;
+    }
+    p {
+        font-size: 9px;
+    }
+    .desc p {
+        font-size: 10px;
+    }
+    ul {
+        float: left;
+        margin-left: -10px;
+    }
+    ul li {
+        margin-left: 0px;
+    }
+    .terms p {
+        margin: 0;
+        padding-top: 150px;
+    }
+    .contacts {
+        width: 40%;
+        margin: 0;
+        padding: 5px;
+        text-align: left;
+    }
+    .contacts i {
+        font-size: 25px;
+        margin-bottom: -10px;
+        margin-top: 0px;
+    }
+    .contacts i p {
+        font-size: 9px;
+        margin: 0;
+        margin-top: -86px;
+        margin-left: 35px;
+        padding-bottom: -2px;
+    }
+    .contacts h6 {
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .socials {
+        width: 40%;
+        margin: 0;
+        padding: 6px;
+        text-align: right;
+    }
+    .socials i {
+        padding: 4px;
+        font-size: 23px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-right: -5px;
+        margin-left: -21px;
+    }
+    .socials h6 {
+        margin-bottom: 5px;
+        margin-top: -178px;
+    }
+    [class*="resp"] {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px) { /* For medium mobile phones (425px) */
+    .bigbox {
+        height: 12775px;
+    }
+    .navbar {
+        height: 45px;
+    }
+    .navbar a {
+        font-size: 16px;
+        padding: 3px;
+    }
+}
+@media only screen and (max-width: 400px) { /* For extra small/small mobile phones (400px and down) */
+    .imgbox {
+        margin: -10px;
+        width: 250px;
+        height: 310px;
+    }
+    .imgbox img {
+        height: 308px;
+        width: 248px;
+    }
+    .imgbox:hover {
+        transform: scale(1.1);
+    }
+    .about.open {
+        max-height: 300px;
+    }
+    .bigbox {
+        height: 11230px;
+    }
+    .title {
+        padding-top: 13px;
+        font-size: 36px;
+    }
+    .resp {
+        margin: 13px;
+    }
+    .desc p {
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    ul {
+        margin-left: -22px;
+    }
+    ul li {
+        font-size: 10px;
+    }
+    .navbar {
+        margin-bottom: 7px;
+    }
+}
+@media only screen and (max-width: 350px) { /* For extra small mobile phones (350px) */
+    .about.open {
+        max-height: 330px;
+    }
+}
